@@ -1,0 +1,24 @@
+{
+  "name": "module-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-module.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.10",
+    "nodemon": "^1.17.1",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "jasmine": "^3.1.0",
+    "request": "^2.85.0"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
