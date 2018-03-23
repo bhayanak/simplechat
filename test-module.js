@@ -56,6 +56,15 @@ io.on('connection', (socket) => {
 mongoose.connect(dbUrl, (err) => {
     console.log('MongoDB: ', err)
 })
-var server = http.listen(3000, () => {
-    console.log('server is listening on port: ', server.address().port)
-})
+
+
+//var server = http.listen(3000, () => {
+//    console.log('server is listening on port: ', server.address().port)
+//})
+
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+ 
+var server = http.listen(server_port, server_ip_address, ()=> {
+  console.log( "Listening on " + server_ip_address + ", port " + server_port )
+});
