@@ -17,9 +17,11 @@
     "request": "^2.85.0"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "start": "test-module.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC"
-}
+},
+"main": "test-module.js"
