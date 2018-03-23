@@ -16,6 +16,7 @@
     "jasmine": "^3.1.0",
     "request": "^2.85.0"
   },
+  "main":"test-module.js",
   "scripts": {
     "test": "jasmine",
     "start": "test-module.js"
