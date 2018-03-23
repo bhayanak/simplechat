@@ -18,8 +18,8 @@
   },
   "main":"test-module.js",
   "scripts": {
-    "test": "jasmine",
-    "start": "test-module.js"
+    "start": "test-module.js",
+    "test": "jasmine"    
   },
   "keywords": [],
   "author": "",
