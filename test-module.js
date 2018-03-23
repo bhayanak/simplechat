@@ -10,8 +10,14 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-//var dbUrl = 'mongodb://localhost:27017/testdb'
+var db_name='chatdb'
 var dbUrl = 'mongodb://user:password@ds113169.mlab.com:13169/chatdb'
+//var dbUrl = 'mongodb://127.0.0.1:27017/' + db_name
+//provide a sensible default for local development
+//take advantage of openshift env vars when available:
+if(process.env.OPENSHIFT_MONGODB_DB_URL){
+    dbUrl = process.env.OPENSHIFT_MONGODB_DB_URL + db_name
+}
 
 var Message = mongoose.model('Message', {
     name: String,
