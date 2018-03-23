@@ -16,12 +16,11 @@
     "jasmine": "^3.1.0",
     "request": "^2.85.0"
   },
-  "main":"test-module.js",
   "scripts": {
-    "start": "test-module.js",
-    "test": "jasmine"    
+    "start": "node test-module.js",
+    "test": "jasmine"
   },
   "keywords": [],
-  "author": "",
+  "author": "Fazorboy",
   "license": "ISC"
 }
